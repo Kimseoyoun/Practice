@@ -1,0 +1,13 @@
+a=int(input())
+b=0
+list_c=[]
+list_d=[]
+for i in range(0,a):
+    c,d=input().split()
+    c=int(c)
+    d=int(d)
+    list_c.append(c)
+    list_d.append(d)
+
+for i in range(0,a):
+    print(list_c[i]+list_d[i])
