@@ -1,0 +1,14 @@
+a,b=input().split()
+a=int(a)
+b=int(b)
+
+if (0<=a<=23 and 0<=b<=59):
+    if (b-45 < 0):
+        b = b+15
+        a = a-1
+        if(a<0):
+            a=24+a
+    else :
+        b = b-45
+    
+print(a,b)
