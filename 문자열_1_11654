@@ -1,0 +1,9 @@
+# 아스키 코드 변환
+
+T = input()
+
+if type(T) is int:
+    print(chr(T))
+    
+if type(T) is str:
+    print(ord(T))
