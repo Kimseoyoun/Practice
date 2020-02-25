@@ -1,0 +1,12 @@
+# 숫자의 합
+
+A = input()
+T = str(input())
+
+sum_ = 0
+
+list_ = list(map(int, list(T)))
+
+sum_ = sum(list_)
+
+print(sum_)
