@@ -1,0 +1,18 @@
+# 알파벳 찾기
+
+T = input()
+T = list(str(T))
+list_c = []
+for i in range(26):
+    list_c.append(0)
+
+list_ = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+for i in range(len(list_)):
+    if list_[i] in T:
+        list_c[i] = T.index(list_[i])
+    else :
+        list_c[i] = -1
+        
+for i in list_c:
+    print(i)
