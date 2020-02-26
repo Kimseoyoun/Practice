@@ -1,0 +1,20 @@
+# 벌집
+
+number = int(input())
+
+a = 0
+b = 0*6+1
+c = 1
+d = 1
+e = 1
+
+while(True):
+    if a<number<=b:
+        print(c)
+        break
+    else:
+        a = b
+        c += 1
+        b = (6*d)+1
+        e += 1
+        d += e
