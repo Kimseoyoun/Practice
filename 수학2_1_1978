@@ -1,0 +1,18 @@
+# 소수 찾기
+
+T = int(input())
+
+list_n = list(map(int, input().split()))
+re_cnt = 0
+
+for i in list_n:
+    cnt = 0
+    if (i==1):
+        continue
+    for j in range(2, i+1):
+        if (i%j == 0):
+            cnt += 1
+    if (cnt == 1):
+        re_cnt += 1
+    
+print(re_cnt)
