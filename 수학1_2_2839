@@ -1,0 +1,19 @@
+# 설탕 배달
+
+T = int(input())
+a = 0
+
+while T>0:
+    if T%5 != 0:
+        T -= 3
+        if T<0:
+            a = -1
+            break
+        a += 1
+    elif T%5 == 0:
+        a += 1
+        T -= 5
+    elif T%5 != 0 and T%3 != 0:
+        a = -1
+
+print(a)
