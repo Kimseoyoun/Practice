@@ -1,0 +1,22 @@
+# M 과 N 사이의 소수를 찾고, 그들의 합과 최솟값을 구하라
+
+number_s = int(input())
+number_f = int(input())
+list_num = []
+list_value = []
+
+for i in range(number_s, number_f+1):
+    list_num.append(i)
+
+for i in list_num:
+    cnt = 0
+    for j in range(2, i+1):
+        if i%j == 0:
+            cnt += 1
+    if cnt == 1:
+        list_value.append(i)
+            
+if len(list_value)==0:
+    print(-1)
+else:
+    print(sum(list_value), min(list_value))
