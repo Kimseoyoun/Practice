@@ -1,0 +1,12 @@
+# 팩토리얼
+
+number = int(input())
+
+def pac(i):
+    if i == 0:
+        return 1
+    elif i == 1:
+        return 1
+    return i*pac(i-1)
+
+print(pac(number))
