@@ -1,0 +1,10 @@
+# 달팽이는 올라가
+
+A, B, V = map(int, input().split())
+
+if (V-B) % (A-B) != 0:
+    x = int((V-B)/(A-B)) + 1
+else:
+    x = int((V-B)/(A-B))
+    
+print(x)
