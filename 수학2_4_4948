@@ -1,0 +1,17 @@
+# 베르트랑 공준
+
+def prime(n):
+    list_ = [True]*n
+    m = int(n**0.5)+1
+    for i in range(2, m):
+        if list_[i] == True:
+            for j in range(i+i, n, i):
+                list_[j] = False
+    return [i for i in range(2,n) if list_[i]==True]
+
+while (1):
+    T = int(input())
+    if T == 0:
+        break
+    li = prime(2*T+1)
+    print(len([i for i in li if i>T]))
